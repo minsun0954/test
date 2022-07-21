@@ -48,4 +48,6 @@ public class Member {
 		return "Member [memberId=" + memberId + ", memberName=" + memberName + ", phone=" + phone + "]";
 	}
 
+	
+	
 }

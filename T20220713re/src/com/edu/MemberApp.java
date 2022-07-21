@@ -8,8 +8,9 @@ import java.util.Scanner;
 public class MemberApp implements MemberService {
 
 	Scanner scn = new Scanner(System.in);
-	List<Member> members = new ArrayList<Member>();		//멤버스에 배열에 저장하겠습더
+	List<Member> members = new ArrayList<Member>();		//  arraylist 컬렉션(배열을 컬렉션) 클래스member거 사용하고 리스트 멤버에 저장하고 매개변수로 멤버스로 설정하겠다
 	
+		
 	public void execute() {
 		// 메뉴: 1.등록 2.수정 3.전체리스트 9.종료
 		// 1)도서반=>기본정보+도서반장,강의실이름
@@ -71,14 +72,21 @@ public class MemberApp implements MemberService {
 				System.out.println("새로운 연락처를 입력하세요. ");
 				String phone = scn.nextLine();
 				
-				Member member = new Member(memberId,null,phone);
-				//ModifyMember(new Member(id,nul, phone))
+
+				modifyMember(new Member(memberId,null, phone));
+				// 이렇게 해도 됨
+				//Member member = new Member(memberId,null,phone);
+				//modifyMember(member);
 				
 				
 				
 			}else if (selectNo == 3){
 				//전체리스트
-				List<Member>list = memberList();
+				for(int i =0; i< members.size();i++) {
+					System.out.println(members.get(i).toString());
+				}
+				
+				
 				
 				
 			}else if (selectNo == 9){
@@ -112,12 +120,12 @@ public class MemberApp implements MemberService {
 
 	@Override // 회원정보수정
 	public void modifyMember(Member member) {
-		for(int i = 1; i < members.size(); i++) {
+		for(int i = 0; i < members.size(); i++) {
 			if(member.getMemberId() == members.get(i).getMemberId()) {
 				members.get(i).setPhone(member.getPhone());
 			}
 		}
-		System.out.println(toString());
+		//System.out.println(toString());
 	}
 
 	@Override // 회원리스트
