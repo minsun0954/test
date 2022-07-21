@@ -8,9 +8,12 @@ import java.util.Scanner;
 public class MemberApp implements MemberService {
 
 	Scanner scn = new Scanner(System.in);
-	List<Member> members = new ArrayList<Member>();		//  arraylist 컬렉션(배열을 컬렉션) 클래스member거 사용하고 리스트 멤버에 저장하고 매개변수로 멤버스로 설정하겠다
+	List<Member> members = new ArrayList<Member>();		//  
+	// 멤버스에 들어오는 리스트들을 arraylist에 넣고 그걸 members 매개변수로 설정하겠다
 	
-		
+	// arraylist 컬렉션(배열을 컬렉션) 클래스member거 사용하고 리스트 멤버에 저장하고 매개변수로 멤버스로 설정하겠다
+	// 리스트가 인터페이스 어레이
+
 	public void execute() {
 		// 메뉴: 1.등록 2.수정 3.전체리스트 9.종료
 		// 1)도서반=>기본정보+도서반장,강의실이름
@@ -84,6 +87,9 @@ public class MemberApp implements MemberService {
 				//전체리스트
 				for(int i =0; i< members.size();i++) {
 					System.out.println(members.get(i).toString());
+					
+					// 멤버스 사이즈 만큼 리스트 읽기 반복
+					
 				}
 				
 				
@@ -102,12 +108,7 @@ public class MemberApp implements MemberService {
 		System.out.println("프로그램 종료");
 			
 			
-			
-			
-			
 		}
-		
-		
 		
 		
 		
@@ -125,7 +126,7 @@ public class MemberApp implements MemberService {
 				members.get(i).setPhone(member.getPhone());
 			}
 		}
-		//System.out.println(toString());
+		
 	}
 
 	@Override // 회원리스트
@@ -135,9 +136,5 @@ public class MemberApp implements MemberService {
 	}
 	
 	
-	// 오버라이드
-	//public void List<Member> memberList(){
-	// 	return members; 	
-	//}
 	
 }

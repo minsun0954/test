@@ -14,7 +14,7 @@ public class Num_4 {
 			}System.out.println(" ");
 		}
 
-		// i 별 하나
+		// i별 하나
 		// j줄의 반복
 		
 	}
