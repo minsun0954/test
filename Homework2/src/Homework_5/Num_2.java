@@ -1,13 +1,18 @@
 package Homework_5;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Num_2 {
 
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		
-		store stores = new store();
+		List<store> stores = new ArrayList<store>();
+		
+		//store stores = new store();
 		
 		String[] goods = null;
 		int[] price = null;

@@ -11,19 +11,31 @@ public class ObesityInfo extends StandardWeightInfo{
 
 	
 	//생성자
-	ObesityInfo(String name, double weight, double height) {
-		super(name, weight, height);
+	ObesityInfo(String name, double height, double weight) {
+		super(name, height, weight);
+	
 	}
 
 
-	@Override
+
 	public void getInformation() {
-		System.out.println("이름:" + getName() + "키:" + height + "몸무게:" + getWeight()+ "비만도:" );
-		//super.getInformation();
+		System.out.println(getName() + "의 신장 " + height + " 몸무게 " + getWeight()+ getObesity());
 	}
 
-	public double getObesity(double weight, double getStandardWeight) {				//: 비만도를 구하는 기능
-		double result = (weight - getStandardWeight)/getStandardWeight*100;
+	public String getObesity() {				//: 비만도를 구하는 기능
+		double bmi = (weight - getStandardWeight())/getStandardWeight()*100;
+		
+		String result;
+		if(bmi>=30) {
+			result = "비만입니다.";
+		}else if(25<=bmi && bmi<=29) {
+			result = "과제중입니다.";
+		}else if(20<=20 && bmi <=24) {
+			result = "정상입니다.";
+		}else{
+			result = "저체중입니다.";
+		}
+	
 		return result;
 	
 	}

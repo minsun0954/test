@@ -10,7 +10,11 @@ public class HumanExe {
 
 	public static void main(String[] args) {
 		
+		StandardWeightInfo humans = new StandardWeightInfo("홍길동", 168, 45);
+		humans.getInformation();
 		
+		ObesityInfo humanss = new ObesityInfo("박둘이", 168, 90);
+		humanss.getInformation();
 		
 		
 		

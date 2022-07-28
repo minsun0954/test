@@ -24,7 +24,7 @@ public class Human {
 
 	//메소드
 	public void getInformation() {		 //: 이름, 키와 몸무게를 출력하는 기능
-		System.out.println("이름:" + name+ "몸무게:" + weight);
+		System.out.println("이름:" + name + "몸무게:" + weight);
 	}
 	
 }

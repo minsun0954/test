@@ -2,6 +2,7 @@ package Homework_5;
 
 import java.util.Scanner;
 
+
 public class store  {
 	//필드
 	String goods;
@@ -13,8 +14,6 @@ public class store  {
 	}
 
 	// get set
-	
-	
 	public void getGoods() {
 		Scanner scanner = new Scanner(System.in);
 		String[] goods = null;
@@ -46,11 +45,12 @@ public class store  {
 		this.price = price;
 	}
 	
-	//public store(int )
 	
 	
 	
 	
 	
 	
+	
+
 }
