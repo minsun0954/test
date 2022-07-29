@@ -14,47 +14,56 @@ public abstract class Culture {
 	String title;
 	int diNum;
 	int actNum;
-	int num;
-	int grade;
+	int num; 
+	int score; //총점
 	
 	//생성자
-	Culture(){		
+	Culture(){	
 	}
 	
 	Scanner scanner = new Scanner(System.in);
 	int sum;
 	
-	public void setTotalScore(int score) { 	// : 관객수와 총점을 누적시키는 기능
+	public void setTotalScore() { 	// : 관객수와 총점을 누적시키는 기능
 		
+		System.out.println("관객수를 입력하시오.");
+		num = Integer.parseInt(scanner.nextLine());
 		
-		num = scanner.nextInt();
-		
-		for(int i = 1; i > num; i++) {
-			System.out.println("점수를 입력하시오");
-				sum = scanner.nextInt(); 
+		for(int i = 1; i <= num; i++) {
+			System.out.println("1~5점 사이이의 평점를 입력하시오");
+			score = Integer.parseInt(scanner.nextLine());
+			sum += score;
+			
 		}
 	
 	}
 	
 	public String getGrade() { 								// : 평점을 구하는 기능
 		double grade= (double)sum/num;
+		String result;
 		
-		for(garde >= 4) {
-			("")
-			
+		if(grade >= 5) {
+			result ="☆☆☆☆☆";
+		}else if(grade >= 4 ) {
+			result = "☆☆☆☆";
+		}else if(grade >= 3 ) {
+			result = "☆☆☆";
+		}else if(grade >= 2 ) {
+			result = "☆☆";
+		}else{
+			result = "☆";
 		}
 		
-		
-		
-		
-		return ;
+		return result;
 	
 	}
 	
 	
-	public abstract void getInformation() {					// : 정보를 출력하는
+	public abstract void getInformation();				// : 정보를 출력하는
 		
-	}
+	
+		
+	
 	
 	
 	

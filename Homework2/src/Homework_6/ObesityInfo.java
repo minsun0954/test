@@ -27,13 +27,13 @@ public class ObesityInfo extends StandardWeightInfo{
 		
 		String result;
 		if(bmi>=30) {
-			result = "비만입니다.";
+			result = " 비만입니다.";
 		}else if(25<=bmi && bmi<=29) {
-			result = "과제중입니다.";
+			result = " 과제중입니다.";
 		}else if(20<=20 && bmi <=24) {
-			result = "정상입니다.";
+			result = " 정상입니다.";
 		}else{
-			result = "저체중입니다.";
+			result = " 저체중입니다.";
 		}
 	
 		return result;
