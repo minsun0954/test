@@ -1,4 +1,4 @@
-package Homework_6;
+package Homework_6_2;
 //2) Movie 클래스를 정의한다.
 //- 추가로 장르를 필드로 가지며 생성자를 이용하여 값을 초기화한다.
 //- 메소드는 다음과 같이 정의한다.
@@ -8,10 +8,8 @@ public class Movie extends Culture {
 	String genre;
 	
 	//생성자
-	Movie(String title, int diNum, int actNum){
-		this.title = title;
-		this.actNum = actNum;
-		this.diNum = diNum;
+	public Movie(String title, int diNum, int actNum){
+		super( title, diNum, actNum);
 	
 	
 	}
@@ -23,7 +21,7 @@ public class Movie extends Culture {
 		System.out.println("영화제목 : " + title);
 		System.out.println("감독 : " + diNum);
 		System.out.println("배우 : " + actNum);
-		System.out.println("영화총점 : " + sum);
+		System.out.println("영화총점 : " + totalScore);
 		System.out.println("영화평점 : "+ getGrade());
 		
 	

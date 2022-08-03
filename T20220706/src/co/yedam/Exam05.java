@@ -13,30 +13,25 @@ public class Exam05 {
 		Scanner scn = new Scanner(System.in);
 		String[] fruits = { "사과", "딸기", "감", "수박", "포도", "복숭아" };
 		
-//		System.out.println("찾는 값을 입력하시오.> ");
-//		String fruit = scn.nextLine();
-//		for(int i = 0; i < fruits.length; i++) {
-//			if(fruits[i].equals(fruit)) {
-//				break;
-//				}else {
-//					System.out.println("찾는 값이 없습니다.");
-//					break;
-//				}	
-//		}
+		System.out.println("찾는 값을 입력하시오.> ");
 		
-		System.out.println("찾는 값을 입력하시요.>");
-		boolean run = true;
+		String fruit = scn.nextLine();
+		int no = 0;
+		for(int i = 0; i < fruits.length; i++) {
 		
-		while(run) {
+			}if
+				no = 1;
 			
+		if(fruits[i].equals(fruit)) {
+			System.out.println("찾는 값이 있습니다. " + fruit);
+		
+		}else{
+			System.out.println("찾는 값이 없습니다.");
 		}
 		
 		
-		   int[] arr = { 1, 2, 3, 4, 5 };
-		 
 		
-		  for (int i = 0; i < arr.length; i++) {            
-			  System.out.println(arr[i]);        }
+
 		
 		
 		}

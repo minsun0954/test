@@ -1,4 +1,4 @@
-package Homework_6;
+package Homework_6_2;
 
 import java.util.Scanner;
 
@@ -12,12 +12,11 @@ import java.util.Scanner;
 //
 public class EmpDept extends Employee{
 	// 필드
-	String department;
+	private String department;
 	
 	//생성자
 	EmpDept(String name, int salary, String department){
-		this.name=name;
-		this.salary=salary;
+		super(name,salary);		// 자식 객체를 만들때 부모 생성자도 만들어줘야함
 		this.department = department;
 	}
 
@@ -35,8 +34,8 @@ public class EmpDept extends Employee{
 
 	@Override
 	public void print() {
-		System.out.println("수퍼클래스\n서브클래스");
-		//super.getInformation();
+		super.print();			// 부모가 가진 값을 출력해주고
+		System.out.println("서브클래스");
 	}
 
 	

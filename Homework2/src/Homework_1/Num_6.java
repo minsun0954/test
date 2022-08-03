@@ -23,7 +23,17 @@ public class Num_6 {
 		int result = a+b+c;
 		System.out.println(value + "일 경우 " + a + "+" + b + "+" + c + "=" + result + " 입니다.");
 		
-		
+		//답
+		int num1 = 373;
+		int num2 = 373/100; 	//3
+		int num3 = (373-(num2*100))/10;
+		// num2*1000 = 3*100
+		// 373 - num2*100 = 373 -300
+		// 73/ 10 = 7
+		int num4 = (373-(num2*100)-(num3*10));
+		// num2*100 = 3*100
+		// 373 - num2*100 = 373-300
+		// 73 - num3*10(70) =3
 	}
 
 }

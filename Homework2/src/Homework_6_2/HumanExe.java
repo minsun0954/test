@@ -1,4 +1,4 @@
-package Homework_6;
+package Homework_6_2;
 //4) 아래와 같은 출력결과가 나오도록 실행코드를 구현하다. (HumanExe)
 //- 출력결과
 //	홍길동님의 신장 168, 몸무게 45, 표준체중 61.2 입니다.
@@ -10,11 +10,18 @@ public class HumanExe {
 
 	public static void main(String[] args) {
 		
-		StandardWeightInfo humans = new StandardWeightInfo("홍길동", 168, 45);
-		humans.getInformation();
+		Human h1 = new StandardWeightInfo("홍길동", 168, 45);
+		h1.getInformation();
 		
-		ObesityInfo humanss = new ObesityInfo("박둘이", 168, 90);
-		humanss.getInformation();
+		Human h2 = new ObesityInfo("박둘이", 168, 90);
+		h2.getObesity();
+		
+		
+//		StandardWeightInfo humans = new StandardWeightInfo("홍길동", 168, 45);
+//		humans.getInformation();
+//		
+//		ObesityInfo humanss = new ObesityInfo("박둘이", 168, 90);
+//		humanss.getInformation();
 		
 		
 		

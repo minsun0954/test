@@ -1,4 +1,4 @@
-package Homework_6;
+package Homework_6_2;
 
 //3) 아래와 같은 출력결과가 나오도록 실행코드를 구현한다.
 //- 출력결과

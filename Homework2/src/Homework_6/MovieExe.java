@@ -14,25 +14,25 @@ package Homework_6;
 //	공연평점 : ☆☆☆☆☆
 //- 조건
 //	관객수, 총점과 평점은 입력되는 값에 따라 변동될 수 있습니다.
-public class MovieExe {
+	public class MovieExe {
 
-	public static void main(String[] args) {
-		
-		Movie m = new Movie("추격자",7,5);
-		
-		m.setTotalScore(); 
-		m.getInformation();
-		
-		System.out.println("=====================");
-		
-		Performance p = new Performance("지킬앤하이드",9,10);
-		
-		p.setTotalScore();
-		p.getInformation();
-		
-		
-		
-		
+		public static void main(String[] args) {
+			
+			Movie m = new Movie("추격자",7,5);
+			
+			m.setTotalScore(); 
+			m.getInformation();
+			
+			System.out.println("=====================");
+			
+			Performance p = new Performance("지킬앤하이드",9,10);
+			
+			p.setTotalScore();
+			p.getInformation();
+			
+			
+			
+			
+		}
+
 	}
-
-}

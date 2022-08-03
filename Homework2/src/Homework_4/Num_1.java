@@ -13,11 +13,19 @@ public class Num_1 {
 		int NUM = arr1[5];
 		System.out.println(NUM);
 		
+		//답 (for문사용해서)		
+		for(int i =0; i<arr1.length; i++) {
+			if(arr1[i] == 60) {
+				System.out.println((i+1)+"번째 위치입니다");
+				break;
+			}
+		}
+		
 		
 		//문제2. 주어진 배열의 인덱스가 3인 곳은 출력하지 말고, 나머지만 출력해보자.
 		System.out.println("문제 2번");
-		for(int i = 0; i < arr1.length; i++) {
-			if(i == 3) {
+		for(int i = 0; i <arr1.length; i++) {
+			if(i == 3) {	//if(i != 3){}
 				continue;
 			}System.out.print(arr1[i] + " ");
 		}
@@ -32,6 +40,15 @@ public class Num_1 {
 			System.out.print(num1 + " ");
 		}
 		System.out.println(" ");
+		
+		
+		//답
+		Scanner sc = new Scanner(System.in);
+		System.out.println("인덱스입력> ");
+		int index = Integer.parseInt(sc.nextLine());
+		arr1[index]= 1000;
+		System.out.println(arr1[index]);
+		
 		
 		//문제4. 주어진 배열의 요소에서 최대값과 최소값을 구해보자.
 		System.out.println("문제 4번");

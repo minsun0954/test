@@ -1,4 +1,4 @@
-package Homework_6;
+package Homework_6_2;
 //3) ObesityInfo 클래스를 정의한다.
 //- StandardWeightInfo 클래스를 상속한다.
 //- 메소드는 다음과 같이 정의한다.
@@ -16,14 +16,15 @@ public class ObesityInfo extends StandardWeightInfo{
 	
 	}
 
-
-
+	//메소드
+	@Override
 	public void getInformation() {
-		System.out.println(getName() + "의 신장 " + height + " 몸무게 " + getWeight()+ getObesity());
+		System.out.println(name + "의 신장 " + height + " 몸무게 " + weight+ getObesity(weight));
 	}
 
-	public String getObesity() {				//: 비만도를 구하는 기능
-		double bmi = (weight - getStandardWeight())/getStandardWeight()*100;
+	
+	public String getObesity(double weight) {				//: 비만도를 구하는 기능
+		double bmi = (weight - super.getStandardWeight(weight))/super.getStandardWeight(weight)*100;
 		
 		String result;
 		if(bmi>=30) {

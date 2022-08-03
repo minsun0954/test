@@ -34,14 +34,14 @@ public class Num_2 {
 					System.out.print("scores[" + i + "]> " );
 					scores[i] = scanner.nextInt();
 				}
-				
 				break;
+				
 			case 3:
 				for ( int i = 0; i < scores.length; i++) {
 					System.out.println("scores[" + i + "]: " + scores[i]);
 				}
-				
 				break;
+				
 			case 4:
 				int max = scores[0];
 				double avg; int sum = 0;
@@ -55,13 +55,12 @@ public class Num_2 {
 				
 				System.out.println("최고 점수 : " + max);
 				System.out.printf("평균 점수 : %.1f\n" , avg);
-				
 				break;
+				
 			case 5:
 				System.out.println("프로그램 종료");
 				run = false;
 				break;
-			
 			
 			}
 	}

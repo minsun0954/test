@@ -8,7 +8,20 @@ public class Num_4 {
 		int val = -4; 
 		int intResult = (val>0)? val : 0;
 		System.out.println(intResult);
+	
 		
+		// if문 ( 이런 방법이 있다... 삼항연산자가 더 좋음 )
+		if(val > 0){
+			System.out.println(val);
+		}else {
+			System.out.println(0);
+		}
+		
+		// 메소드로 하는 방법 ( 이런것도 있따...)
+		//public int exam() {
+			//return (val>0)? val : 0;
+		//}
+
 	}
 
 }
