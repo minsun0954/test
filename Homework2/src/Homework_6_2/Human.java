@@ -18,17 +18,7 @@ public class Human {
 
 	}
 	
-	
-	//get
-	public String getName() {
-		return name;
-	}
 
-	public double getWeight() {
-		return weight;
-	}
-	
-	
 
 	//메소드
 	public void getInformation() {		 //: 이름, 키와 몸무게를 출력하는 기능

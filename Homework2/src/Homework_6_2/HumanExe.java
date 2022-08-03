@@ -14,7 +14,7 @@ public class HumanExe {
 		h1.getInformation();
 		
 		Human h2 = new ObesityInfo("박둘이", 168, 90);
-		h2.getObesity();
+		h2.getInformation();
 		
 		
 //		StandardWeightInfo humans = new StandardWeightInfo("홍길동", 168, 45);

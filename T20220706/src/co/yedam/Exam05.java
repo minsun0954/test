@@ -16,20 +16,19 @@ public class Exam05 {
 		System.out.println("찾는 값을 입력하시오.> ");
 		
 		String fruit = scn.nextLine();
-		int no = 0;
+		
 		for(int i = 0; i < fruits.length; i++) {
 		
-			}if
-				no = 1;
-			
-		if(fruits[i].equals(fruit)) {
-			System.out.println("찾는 값이 있습니다. " + fruit);
+			if(fruits[i].equals(fruit)) {
+				System.out.println("찾는 값이 있습니다. " + fruit);
+				break;
 		
-		}else{
+			}else{
 			System.out.println("찾는 값이 없습니다.");
+			continue;
 		}
 		
-		
+		}
 		
 
 		

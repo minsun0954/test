@@ -18,14 +18,9 @@ public class StandardWeightInfo extends Human{
 	//메소드
 	@Override
 	public void getInformation() { 			// : 이름, 키, 몸무게와 표준체중을 출력하는 기능
-		System.out.println(name + "의 신장 " + height + " 몸무게 " + weight + " 표준체중 " + getStandardWeight(weight) + "입니다.");
+		System.out.println(name + "의 신장 " + height + " 몸무게 " + weight + " 표준체중 " + getStandardWeight(height) + "입니다.");
 	}
 	
-	
-//	public double getStandardWeight() {		// : 표준체중을 구하는 기능
-//		double result = (height - 100)*0.9;
-//		return result;
-//	}
 	
 	public double getStandardWeight(double height) {		// : 표준체중을 구하는 기능
 		return (height - 100)*0.9;

@@ -19,11 +19,11 @@ public class ObesityInfo extends StandardWeightInfo{
 	//메소드
 	@Override
 	public void getInformation() {
-		System.out.println(name + "의 신장 " + height + " 몸무게 " + weight+ getObesity(weight));
+		System.out.println(name + "의 신장 " + height + " 몸무게 " + weight+ getObesity(weight,height));
 	}
 
 	
-	public String getObesity(double weight) {				//: 비만도를 구하는 기능
+	public String getObesity(double weight, double height) {				//: 비만도를 구하는 기능
 		double bmi = (weight - super.getStandardWeight(weight))/super.getStandardWeight(weight)*100;
 		
 		String result;

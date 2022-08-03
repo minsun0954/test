@@ -36,21 +36,21 @@ public class lotto {
 			for(int i = 1; i <= time; i++) {	
 				
 				System.out.print(i +"번> ");
-			
-				
 				
 				for(int j = 0; j < lot.length; j++) {
 					int ranNum = (int)(Math.random()*45)+1;
 					lot[j] = ranNum;
 					
-						if(lot[j] != ranNum) {
-						 continue;
-					 }
-						
-						
+					
 					System.out.print(lot[j] + " ");
+					
 				}System.out.println(" ");  
-			
+				
+				
+				
+				if ((i) % 5 == 0) {
+					System.out.println("-------------------------------------");
+				}
 			
 			}	
 			
