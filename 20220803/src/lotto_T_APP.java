@@ -12,11 +12,12 @@ public class lotto_T_APP {
 	List<int[]> list = new ArrayList<>();
 	int menu = 0;
 	
-	public lotto_T_APP() {
+	public lotto_T_APP() { 
 		run();
 	}
 
-	
+	// private 캡슐 은닉화, 여기서만 사용가능하게 
+	// run메소드
 	private void run() {
 
 		while (menu != 99) {
@@ -84,29 +85,25 @@ public class lotto_T_APP {
 	private int[] makeNumber() {
 		
 		int[] lottoNo = new int[6];
-
+		
+		// 번호 6개
 		for (int i = 0; i < 6; i++) {
 			
-			int randomNo = (int) (Math.random() * 45) + 1;
+			lottoNo[i] = (int)(Math.random()*45)+1;
 			
 			//첫번째 값은 중복체크 할 필요 없음.
 			if (i > 0) {
 			                  // j =0, i번째까지, i = 3(index = 0,1,2,3)
+				// i = 0 / i=1 j=0 / i=2 j=0 1/ i=3 j=0 1 2 / -> 같은게 발생하면 / i=2 j=0 1 ( 덮어쓰기 )
 				for (int j = 0; j < i; j++) {
-				//40, 30, 20 <-배열에 들어있는 값
-				//20 <- randomNo
 					//i=2
-					if (lottoNo[j] == randomNo) {
+					if (lottoNo[j] == lottoNo[i]) {
 						i -= 1;
 						System.out.println("중복제거!");
 						break;
-					}else if((j+1)==i) {
-						lottoNo[i] = randomNo;
 					}
 				}
-			}else {
-				lottoNo[i] = randomNo;
-			}
+			}		
 		}
 		
 		return lottoNo;
