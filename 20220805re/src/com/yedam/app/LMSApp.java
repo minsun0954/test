@@ -18,11 +18,10 @@ public class LMSApp {
 	MemberDTO MD = null;
 	
 	
-	
-	
 	public LMSApp() {
 		run();
 	}
+	
 	
 	// run 실행부 메소드
 	private void run() {
